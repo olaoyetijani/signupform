@@ -65,7 +65,7 @@ class App extends Component {
             password: this.state.password
 
         }
-        axios.post('/api/routesUrls', registered)
+        axios.post('http://localhost:4000/api/signup', registered)
             .then(res => console.log(res.data))
 
         // use (window.location) if you want to redirect to another page //
